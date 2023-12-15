@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "kafka-to-parquet"
+version = "0.1.0"
+description = "Kafka to Parquet using Deephaven"
+authors = ["Devin Smith <devinsmith@deephaven.io>"]
+readme = "README.md"
+packages = [{include = "kafka_to_parquet"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+deephaven-core = "^0.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
